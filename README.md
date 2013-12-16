@@ -3,7 +3,7 @@ Restacey - Responsive template for Stacey
 ![alt tag](https://raw.github.com/aksakalli/restacey/master/public/docs/preview.jpg)
 Overview
 ---------------------
-[Stacey][1] is a lightweight content management system and does not requiere a database. It is simply used by droping files to server. Restacey is a bit modified version of default template of Stacey and features responsive view. It is lightweight  portfolio template.
+[stacey][1] is a lightweight content management system and does not requiere a database. It is simply used by droping files to server. Restacey is a bit modified version of default template of stacey and features responsive view. It is a lightweight  portfolio template.
 
 Installation
 ---------------------
@@ -11,9 +11,7 @@ Replace the `content`, `public` & `templates` folders from the default stacey in
 
 Demo
 ---------------------
-I made this template for one of my photographer friend (He is definitely not familiar with web design) and he is currently running his website's content on his own. 
-
-Here is his website: [alpertunali.com](http://alpertunali.com/)
+Here is a website that uses this template: [alpertunali.com](http://alpertunali.com/)
 
 License
 ---------------------
