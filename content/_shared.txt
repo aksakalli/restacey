@@ -1,0 +1,10 @@
+name: Restacey
+-
+description_meta: Responsive theme for Stacep App.
+-
+email: 
+<info@yourdomain.com>
+-
+google_analytics: <script>
+  //put your analytics code here
+</script>

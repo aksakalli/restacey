@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	:head_shared
+	<title>@title, @name's Portfolio</title>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			:header_content
+		</div>
+		<div class="site">
+			<div class="project-detail-info">
+				<h4>@title</h4>
+				<p><em>@date</em><p>
+				<div>@content</div>
+			</div>
+			<div class="media">
+				if $images do
+					:images
+				endif  
+				if $html do
+					:html
+				endif
+			</div>
+		</div>
+		<div class="footer">
+			:footer_content
+		</div>
+	</div>
+	@google_analytics
+</body>
+</html>	

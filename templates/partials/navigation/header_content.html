@@ -1,0 +1,10 @@
+<div class="logo">
+	<a href="@root_path" >@name</a>
+</div>
+<div class="navigation">
+	foreach $root do
+	  if !$children do
+		<a href="@url" >@title</a><span> / </span>
+	  endif
+	endforeach
+</div>

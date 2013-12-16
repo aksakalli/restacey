@@ -1,0 +1,268 @@
+/**
+*	[Master Stylesheet]
+*	Date : 13.09.2013   
+*	Author : Can Guney Aksakalli
+*	Description: It is a fully responsive design for Stacey.
+*/
+
+/* Table of Contents
+==================================================
+#General Things
+#Base 960 Grid
+#Tablet (Portrait)
+#Mobile (Landscape)
+#Mobile (Portrait)
+
+/* #General Things
+================================================== */
+body, input { font-family: "Helvetica", helvetica, "Helvetica Neue", arial, sans-serif; line-height: 1.3; }
+a { text-decoration: none; color: #555 }
+a:hover {color: #000}	
+body, html { width:100%; }
+
+/* #Base 960 Grid
+================================================== */
+.container { 
+	position:relative; 
+	width:960px; 
+	margin:15px auto; 
+}
+.container .header {
+	border-bottom:2px solid black;
+	padding:10px 0 12px;
+}
+
+.container .header:after
+{
+	content:".";
+	visibility:hidden;
+	clear:both;
+	display:block;
+	line-height:0px;
+}
+
+.container .header .logo {
+	float:left;
+}
+
+.container .header .logo a {
+	font-size:1.17em;
+	font-weight:bold;
+}
+
+.container .header .navigation {
+	float:right;
+}
+
+.container .site {
+	margin: 10px 0;
+}
+
+.container .site:after
+{
+	content:".";
+	visibility:hidden;
+	clear:both;
+	display:block;
+	line-height:0px;
+}
+
+.container .site .category-header {
+	border-bottom:1px solid black;
+	padding:10px 0 5px;
+	clear:both;
+}
+
+.container .site .category-container {
+	margin:5px -10px 10px;
+}
+
+.project {
+	float: left;
+	width:225px;
+	height:225px;
+	margin:10px;
+	background-position:center;
+	background-size:cover;
+	background-color:#808080;
+}
+
+.project .project-info {
+	background-color:rgba(0,0,0,.8);
+	width:100%;
+	height:100%;
+	text-align:center;
+	display:table;
+	opacity:0;
+	-webkit-transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+	-o-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out;
+}
+
+.project:hover { 
+	-webkit-box-shadow:0px 0px 8px rgba(51, 55, 69, 0.65);
+	-moz-box-shadow:0px 0px 8px rgba(51, 55, 69, 0.65);
+	-o-box-shadow:0px 0px 8px rgba(51, 55, 69, 0.65);
+	box-shadow:0px 0px 8px rgba(51, 55, 69, 0.65);
+}
+
+.project:hover .project-info{
+	opacity:1;
+}
+
+.project .project-info > div {
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center;
+	width: 90%;
+}
+
+
+.project .project-info  > div h2{
+	margin: 0;
+	padding: 8px;
+	color:#EEE;
+
+}
+
+.project .project-info  > div p{
+	color:#AAA;
+	margin: 0;
+	padding: 8px;
+}
+
+.container .site .media {
+	width:600px;
+	float: left;
+}
+
+.container .site .media img{
+	max-width: 100%;
+	margin: 3px 0;
+}
+
+.container .site .project-detail-info {
+	width:320px;
+	float: right;
+	text-align: right;
+}
+
+.footer {
+	clear: both;
+	position: relative;
+	border-top: 2px solid black;
+	text-align: center;
+	padding: 8px 0;
+	font-size:80%;
+}
+
+a.atom-rss {
+	margin: 0px 0px 0px 6px;
+	padding: 2px 3px 0px;
+	font-size: 0.93em;
+	letter-spacing: 0.08em;
+	background: #ddd;
+}
+
+
+/* #Tablet (Portrait)
+================================================== */
+/* Note: Design for a width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.container  { 
+		width: 768px; 
+	}
+	.container .site .category-container .project {
+		width:177px;
+		height:177px;
+	}
+	.project .project-info  > div h2{
+		padding: 6px;
+		font-size:1.1em;
+	}
+
+	.project .project-info  > div p{
+		font-size:90%;
+		padding: 6px;
+	}
+	
+	.container .site .media {
+		width:550px;
+		float: left;
+	}
+	
+	.container .site .project-detail-info {
+		width:170px;
+		float: right;
+	}
+}	
+
+/* #Mobile (Landscape)
+================================================== */
+/* Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container { 
+		width: 420px; 
+	}
+	
+	.container .site .category-container .project {
+		width:200px;
+		height:200px;
+	}	
+	
+	.project .project-info  > div h2{
+		padding: 7px;
+		font-size:1.2em;
+	}
+
+	.project .project-info  > div p{
+		font-size:95%;
+		padding: 7px;
+	}
+
+	.container .site .media {
+		width:420px;
+		float: left;
+	}
+	
+	.container .site .project-detail-info {
+		width:420px;
+		float: left;
+	}	
+	
+}
+
+
+/*  #Mobile (Portrait)
+================================================== */
+/* Note: Design for a width of 320px */
+@media only screen and (max-width: 479px) {
+    .container { 
+		width: 300px; 
+	}
+	
+	.container .site .category-container .project {
+		width:140px;
+		height:140px;
+	}
+	.project .project-info  > div h2{
+		padding: 5px;
+		font-size:.9em;
+	}
+
+	.project .project-info  > div p{
+		font-size: 70%;
+		padding: 5px;
+	}
+	
+	.container .site .media {
+		width:300px;
+		float: left;
+	}
+	
+	.container .site .project-detail-info {
+		width:300px;
+		float: left;
+	}
+}

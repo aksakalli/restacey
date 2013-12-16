@@ -1,0 +1,17 @@
+foreach $root do
+  if $children do
+    <div class="category-header">@title</div>
+	<div class="category-container">
+    foreach $children do		
+		<a class="project" style="background-image:url('@thumb')" href="@url">
+			<div class="project-info">
+				<div>
+					<h2>@title</h2>
+					<p>@date</p>
+				</div>
+			</div>
+		</a>
+    endforeach
+	</div>
+  endif
+endforeach
